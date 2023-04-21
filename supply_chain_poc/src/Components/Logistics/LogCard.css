@@ -1,0 +1,51 @@
+.usercard >.card{
+    background-color: #ee9ce2!important;
+    border-radius: 20px;
+    height: 200px;
+    width: 699px;
+}
+.usercard >.card-user{
+    background-color: #f3e658!important;
+    border-radius: 20px;
+    height: 200px;
+    width: 699px;
+}
+
+.usercard >.card-b{
+    background-color: #e6d0ff!important;
+    border-radius: 0px;
+    height: 200px;
+    width: 699px;
+}
+.usercard >.card >.card-footer {
+    border-top:unset;
+}
+.usercard >.card-title{
+    font-size: 2rem;
+}
+.usersspan{
+    
+        float: right;
+        margin-right: 35px;
+        margin-top: 40px;
+        font-size: 45px;  
+}
+.nftsspan{
+    float: right;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+.nftimage{
+    width: 67px;
+    height: 67px;
+    border-radius: 10px
+}
+.button-nn{
+    height: 50px;
+    width: 207px;
+    border-radius: 20px;
+    background-color: #023b6d;
+    color: lightgray;
+    text-align: center;
+    margin: auto;
+}

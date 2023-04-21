@@ -1,0 +1,39 @@
+/* .ag-theme-alpine {
+    --ag-foreground-color: rgb(126, 46, 132);
+    --ag-background-color: rgb(249, 245, 227);
+    --ag-header-foreground-color: rgb(255, 255, 255);
+    --ag-header-background-color: rgb(209, 64, 129);
+    --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+    --ag-header-column-resize-handle-color: rgb(126, 46, 132);
+
+    --ag-font-size: 17px;
+    --ag-font-family: monospace;
+} */
+.ag-theme-alpine {
+    --ag-foreground-color: 
+    --ag-background-color: 
+    --ag-header-foreground-color: #000000;
+    --ag-header-background-color: #023b6d;
+    --ag-odd-row-background-color: rgba(206, 75, 75, 0.03);
+    --ag-header-column-resize-handle-color: hsl(296, 48%, 35%);
+  
+    --ag-font-size: 16px;
+    --ag-font-family: monospace;
+  }
+  .ag-header-cell-text{
+    color:lightgray;
+  }
+  .ag-icon{
+    color:lightgray;
+  }
+  .ag-cell-value{
+    color: rgb(2, 59, 109);
+  }
+  .excel{
+    background-color: #e8e8e5;
+    border: none;
+    border-radius: 4px;
+  }
+  .ag-paging-button >  .ag-icon{
+    color:grey;
+  }

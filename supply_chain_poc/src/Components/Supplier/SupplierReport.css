@@ -1,0 +1,9 @@
+.report-button{
+    height: 10px;
+    width: 207px;
+    border-radius: 20px;
+    background-color: #023b6d;
+    color: lightgray;
+    text-align: center;
+    margin: auto;
+}

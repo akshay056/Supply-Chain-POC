@@ -1,0 +1,63 @@
+.usercard1 >.card{
+    background-color: hwb(110 5% 25%)!important;
+    border-radius: 20px;
+    height: 130px;
+    width: 199px;
+}
+
+.usercard1 >.card-user{
+    background-color: #4d4e8d!important;
+    border-radius: 20px;
+    height: 130px;
+    width: 199px;
+}
+
+
+
+.usercard1 >.card-user:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+.usercard1 >.card >.card-footer {
+    border-top:unset;
+}
+.usercard1 >.card-title{
+    font-size: 2rem;
+}
+.usersspan{
+    
+        float: right;
+        margin-right: 35px;
+        margin-top: 40px;
+        font-size: 45px;  
+}
+.nftsspan{
+    float: right;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+.nftimage{
+    width: 67px;
+    height: 67px;
+    border-radius: 10px
+}
+.button-nn{
+    height: 50px;
+    width: 207px;
+    border-radius: 20px;
+    background-color: #023b6d;
+    color: lightgray;
+    text-align: center;
+    margin: auto;
+}
+.opensea{
+    display: flex;
+}
+.card-text{
+    color: white;
+    font-weight: 500;
+}
+

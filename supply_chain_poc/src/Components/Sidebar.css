@@ -1,0 +1,34 @@
+.bg-dark{
+    background-color: #023b6d !important;
+}
+.nav-link {
+    color: #080808;
+    text-decoration: none;
+}
+.remove-under-line{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.image-logo{
+    height: 90px;
+    width: 80px;
+    border-radius: 20px;
+}
+.sonata-logo{
+    height: 80px;
+    width: 125px;
+    margin-top: 13px;
+}
+.pt-2 {
+    padding-right: 0.5rem!important;
+}
+.name{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+.abc
+{
+    font-size :smaller;
+    color:rgb(56, 55, 55);
+}
