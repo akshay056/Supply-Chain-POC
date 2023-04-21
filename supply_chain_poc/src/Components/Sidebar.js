@@ -23,10 +23,10 @@ function Sidebar() {
                         {/* {obj.firstName}&nbsp;{obj.lastName} */}
                     </span><br /><br /><br />
 
-                    {/* {(location && location.pathname === "/dashboard") || (location && location.pathname === "/TransactionHistory") ? */}
+                    {(location && location.pathname === "/Logistics/Dashboard") || (location && location.pathname === "/Logistics/ShipmentRequest")|| (location && location.pathname === "/Logistics/Payment") ?
                         <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center" id="menu">
                             <li className="nav-item">
-                                <Link to="/Logistics/dashboard" className='remove-under-line'>
+                                <Link to="/Logistics/Dashboard" className='remove-under-line'>
                                 <i className="fs-8 bi-house"></i> 
                                 {/* <Button variant="outline-dark"> */}
                                 <span className="ms-1 d-none d-sm-inline">
@@ -53,21 +53,91 @@ function Sidebar() {
 
                             <li className="nav-item">
                                 <Link to="/" className="remove-under-line">
-                                    <span onClick={handleLogout}>Logout</span>
+                                <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline" onClick={handleLogout}>
+                                    Logout
+                                </span>
+                                    
                                 </Link>
                             </li>
                         </ul>
 
-                        {/* : (location && location.pathname === "/user") ?
-                            <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center " id="menu">
-                                <br />
-                                <li className="nav-item">
-                                    <Link to="/" className="remove-under-line">
-                                        <span onClick={handleLogout}>Logout</span>
-                                    </Link>
-                                </li>
-                            </ul>
-                            : ""} */}
+                        : (location && location.pathname === "/Supplier/Dashboard") || (location && location.pathname === "/Supplier/ShipmentRequest")||(location && location.pathname === "/Supplier/Report")||(location && location.pathname === "/Supplier/Payment") ?
+
+                        <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center" id="menu">
+                        <li className="nav-item">
+                            <Link to="/Supplier/Dashboard" className='remove-under-line'>
+                            <i className="fs-8 bi-house"></i> 
+                            {/* <Button variant="outline-dark"> */}
+                            <span className="ms-1 d-none d-sm-inline">
+                        Dashboard
+                            </span>
+                            {/* </Button> */}
+                            </Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/Supplier/Report" className='remove-under-line'>
+                            <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline">
+                        Report
+                            </span>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/Supplier/ShipmentRequest" className='remove-under-line'>
+                            <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline">
+                        Shipment Request
+                            </span>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/Supplier/Payment" className='remove-under-line'>
+                            <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline">
+                        Payments
+                            </span>
+                            </Link>
+                        </li>
+
+                        <li className="nav-item">
+                                <Link to="/" className="remove-under-line">
+                                <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline" onClick={handleLogout}>
+                                    Logout
+                                </span>
+                                    
+                                </Link>
+                            </li>
+                    </ul>
+                        : (location && location.pathname === "/Manufacturer/Dashboard") || (location && location.pathname === "/Manufacturer/ShipmentStatus") ?
+                        <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center" id="menu">
+                            <li className="nav-item">
+                                <Link to="/Manufacturer/Dashboard" className='remove-under-line'>
+                                <i className="fs-8 bi-house"></i> 
+                                {/* <Button variant="outline-dark"> */}
+                                <span className="ms-1 d-none d-sm-inline">
+                            Dashboard
+                                </span>
+                                {/* </Button> */}
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link to="/Manufacturer/ShipmentStatus" className='remove-under-line'>
+                                <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline">
+                            Shipment Status
+                                </span>
+                                </Link>
+                            </li>
+                            
+
+                            <li className="nav-item">
+                                <Link to="/" className="remove-under-line">
+                                <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline" onClick={handleLogout}>
+                                    Logout
+                                </span>
+                                    
+                                </Link>
+                            </li>
+                        </ul>
+                           : ""} 
                 </div>
             </div>
         </>

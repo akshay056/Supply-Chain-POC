@@ -15,7 +15,7 @@ function Content() {
     return (
         <>
             {location && location.pathname === "/" && <Dashboard />}
-            {location && location.pathname === "/Logistics/dashboard" && <Dashboard />}
+            {location && location.pathname === "/Logistics/Dashboard" && <Dashboard />}
             {location && location.pathname === "/Logistics/Payment" && <Payment />}
             {location && location.pathname === "/Logistics/ShipmentRequest" && <ShipmentRequest />}
             {location && location.pathname === "/Supplier/Dashboard" && <SupplierDashboard />}

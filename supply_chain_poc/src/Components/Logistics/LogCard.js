@@ -3,7 +3,7 @@ import './LogCard.css';
 function LCard(props) {
   return (
     <>
-      <div style={{ display: "flex" }} className="usercard">
+      <div style={{ display: "flex" }} className="usercard2">
         <div className="card text-dark bg-i mb-3" style={{ maxWidth: "18rem", }}>
 
           <div className="card-footer bg-transparent border-success nftsspan">

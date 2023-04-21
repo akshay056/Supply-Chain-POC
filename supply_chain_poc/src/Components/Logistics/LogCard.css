@@ -1,26 +1,26 @@
-.usercard >.card{
+.usercard2 >.card{
     background-color: #ee9ce2!important;
     border-radius: 20px;
     height: 200px;
     width: 699px;
 }
-.usercard >.card-user{
+.usercard2 >.card-user{
     background-color: #f3e658!important;
     border-radius: 20px;
     height: 200px;
     width: 699px;
 }
 
-.usercard >.card-b{
+.usercard2 >.card-b{
     background-color: #e6d0ff!important;
     border-radius: 0px;
     height: 200px;
     width: 699px;
 }
-.usercard >.card >.card-footer {
+.usercard2 >.card >.card-footer {
     border-top:unset;
 }
-.usercard >.card-title{
+.usercard2 >.card-title{
     font-size: 2rem;
 }
 .usersspan{

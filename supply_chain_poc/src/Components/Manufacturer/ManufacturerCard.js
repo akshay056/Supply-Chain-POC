@@ -20,8 +20,8 @@ function Card(props) {
 
 
                     <div className="card-footer bg-transparent border-success">
-                        <p className="card-text">Order Placed</p>
-                        <p className="card-text">{props.ordercount}</p>
+                        <p className="card-text1">Order Placed</p>
+                        <p className="card-text1">{props.ordercount}</p>
 
                     </div>
                 </div>
