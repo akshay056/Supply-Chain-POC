@@ -15,7 +15,7 @@ async function loginUser(credentials) {
   })
   .then(resp=>resp.json())
 
-    // .then(json => console.log(json))
+  // .then(json => console.log(json))
 }
 
 const Login = () => {
@@ -29,30 +29,32 @@ const Login = () => {
       username,
       password
     });
+    console.log("dc",response);
+    // debugger;
     localStorage.setItem("user-info",JSON.stringify(response))
     if ( response && response['status'] == 200) {
           if(response['participantType'] == 'Manufacturer') {
           // localStorage.setItem('code', response['code']);
           // localStorage.setItem('email', JSON.stringify(response.data.Email));
-          window.location.href="/dashboard";
+          window.location.href="/Manufacturer/Dashboard";
        }
        if(response['participantType'] == 'Manufacturer' && response['isAdmin'] == true) {
         // localStorage.setItem('code', response['code']);
         // localStorage.setItem('email', JSON.stringify(response.data.Email));
-        window.location.href="/dashboard";
+        window.location.href="/Manufacturer/Dashboard";
      }
        else if(response['participantType'] == 'Supplier') {
         // localStorage.setItem('code', response['code']);
         // localStorage.setItem('email', JSON.stringify(response.data.Email));
-        window.location.href="/dashboard";
+        window.location.href="/Supplier/Dashboard";
      }
      else if(response['participantType'] == 'Logistics') {
       // localStorage.setItem('code', response['code']);
       // localStorage.setItem('email', JSON.stringify(response.data.Email));
-      window.location.href="/dashboard";
+      window.location.href="/Logistics/Dashboard";
    }
        else{
-        window.location.href="/dashboard";
+        window.location.href="/";
        }
      //navigate("/dashboard");
        }

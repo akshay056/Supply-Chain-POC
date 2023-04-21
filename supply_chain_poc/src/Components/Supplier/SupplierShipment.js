@@ -206,7 +206,7 @@ const onCellClicked = (params) => {
     return(
       <div>
 
-    <h3>Shipment</h3>
+    <h3>Shipment Request</h3>
         {/* <button style={{position: 'relative', left:900}}>Create</button> */}
         {/* <button type="button" class="btn btn-primary mb-2" style={{position: 'absolute', top:'13px', right:'25px'}} onClick={createBtnClicked}>Create</button> */}
      {/* On div wrapping Grid a) specify theme CSS Class Class and b) sets Grid size */}

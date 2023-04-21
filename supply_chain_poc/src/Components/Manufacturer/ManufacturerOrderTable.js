@@ -92,7 +92,7 @@ function Table(props) {
          {field: 'orderID', headerName: 'OrderID', filter: true, flex: 1, filter: true,floatingFilter: true},
         { field: 'manufacturerName',headerName: 'OrderBy', filter: true, sortable: true, floatingFilter: true, flex: 1 },
            { field: 'supplierName', filter: true, sortable: true, floatingFilter: true, flex: 1 },
-            {field:'invoiceReport', headerName: 'invoiceReport',  flex: 1.5, filter: true,floatingFilter: true, cellRendererFramework:(params)=>{
+            {field:'invoiceReport', headerName: 'invoiceReport',  flex: 1.5,  cellRendererFramework:(params)=>{
             console.log("report param", params)
             rowValue = params;
             return(

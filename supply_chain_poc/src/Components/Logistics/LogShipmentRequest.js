@@ -159,7 +159,7 @@ const onCellClicked = (params) => {
   return (
     <div>
       <div className="ag-theme-alpine" style={{ height: 490, width: 'auto' }}>
-        <div><h3 className="header" style={{ color: "#023b6d", marginBottom: "20px" }}>Shipment Orders</h3></div>
+        <div><h3 className="header" style={{ color: "#023b6d", marginBottom: "20px" }}>Shipment Requests</h3></div>
         <br />
         <AgGridReact
 

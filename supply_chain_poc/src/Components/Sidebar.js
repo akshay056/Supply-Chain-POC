@@ -10,7 +10,7 @@ function Sidebar() {
     const location = useLocation();
     let userinfo = localStorage.getItem("user-info");
     const obj = JSON.parse(userinfo);
-
+    console.log("csdc",obj.name);
     return (
         <>
             <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark ">
@@ -18,9 +18,9 @@ function Sidebar() {
                     <span >
                         {logo && <img className='image-logo' src={logo} />}
                     </span>
-                    <span className='name pt-1 px-2'>
-                        Akshay
-                        {/* {obj.firstName}&nbsp;{obj.lastName} */}
+                    <span className='name pt-3 px-2'>
+                
+                        {obj.name}
                     </span><br /><br /><br />
 
                     {(location && location.pathname === "/Logistics/Dashboard") || (location && location.pathname === "/Logistics/ShipmentRequest")|| (location && location.pathname === "/Logistics/Payment") ?
@@ -39,7 +39,7 @@ function Sidebar() {
                             <li className="nav-item">
                                 <Link to="/Logistics/ShipmentRequest" className='remove-under-line'>
                                 <i className="fs-4 bi-house"></i> <span className="ms-1 d-none d-sm-inline">
-                            Shipment Orders
+                            Shipment Requests
                                 </span>
                                 </Link>
                             </li>

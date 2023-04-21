@@ -31,9 +31,9 @@ function Table() {
     const onDownloadClicked = (params) => {
         const fileName='file.pdf';
         let pdf;
-        if (params.target.getAttribute('data-col') == 'Shipment Details') {
+        if (params.target.getAttribute('data-col') == 'Bill of Landing') {
           // setPdfValue(params.target.getAttribute('data-view'))
-          pdf = `https://gateway.pinata.cloud/ipfs/${params.target.getAttribute('data-download')}`;
+           pdf=`https://gateway.pinata.cloud/ipfs/${params.target.getAttribute('data-download')}`;
         }
         if (params.target.getAttribute('data-col') == 'Delivery Receipt') {
           // setPdfValue(params.target.getAttribute('data-view'))
@@ -54,7 +54,8 @@ function Table() {
         const onViewClicked = (params) => {
             console.log('params viewwwww', params.target.getAttribute('data-view'));
             console.log('params collll', params.target.getAttribute('data-col'));
-            if (params.target.getAttribute('data-col') == 'Shipment Details') {
+            
+            if (params.target.getAttribute('data-col') == 'Bill of Landing') {
               setPdfValue(params.target.getAttribute('data-view'))
             }
             else if (params.target.getAttribute('data-col') == 'Delivery Receipt') {
@@ -96,15 +97,28 @@ function Table() {
 
     const [columnDefs] = useState([
         {field: 'orderID', headerName: 'Order ID', filter: true, flex: 1, filter: true,floatingFilter: true},
-        {field: 'manufacturerName', headerName: 'Manufacturer Name', filter: true, flex: 1, filter: true,floatingFilter: true},
+        // {field: 'manufacturerName', headerName: 'Manufacturer Name', filter: true, flex: 1, filter: true,floatingFilter: true},
          {field:'logisticsName', headerName: 'Logistics Name',  flex: 1.5, filter: true,floatingFilter: true},
-         {field: 'status', headerName:'Status', flex:1, cellRendererFramework:(params)=> {
+         {field: 'status', headerName:'Status', flex:1.2,filter: true,floatingFilter: true, cellRendererFramework:(params)=> {
             if(params.data.status){
                 return <p>Delivered</p>
             }else{
                 return <p>In progress</p>
             }
         }},
+        {
+          field: 'billOfLanding', headerName: 'Bill of Landing', filter: true, flex: 1.5, cellRendererFramework: (params) => {
+            console.log(params.data);
+            return (
+              <div>
+                <img src={eye} style={{ height: 35, width: 30 }} data-view={params.data.billOfLanding} data-col={params.colDef.headerName} 
+                  onClick={onViewClicked} /> &nbsp;&nbsp;
+                <img src={downloadLogo} style={{ height: 30, width: 30 }} data-download={params.data.billOfLanding} data-col={params.colDef.headerName} data-no={params.data.orderID}
+                  onClick={onDownloadClicked} />
+              </div>
+            )
+          }
+        },
         {
             field:'deliveryRecipt', headerName: 'Delivery Receipt', flex: true, flex:1.5, cellRendererFramework: (param) =>{
                 rowValue=param;
@@ -118,7 +132,7 @@ function Table() {
             
             )
         }},
-        { headerName:'Upload', flex:1.5, cellRendererFramework:()=>{
+        { headerName:'Upload', flex:1.2, cellRendererFramework:()=>{
            return(
               <img src={uploadLogo} style={{ height: 30, width: 30 }} />
             )
