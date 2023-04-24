@@ -8,9 +8,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const PDFViewer = ({ open, onClose, info }) => {
     const pdf = `https://gateway.pinata.cloud/ipfs/${info}`;
-    console.log('row value', info)
     const newplugin = defaultLayoutPlugin();
-    // const viewPDF="https://ipfs.io/ipfs/QmaNxbQNrJdLzzd8CKRutBjMZ6GXRjvuPepLuNSsfdeJRJ";
     if (!open) return null
 
     return (
@@ -24,7 +22,6 @@ const PDFViewer = ({ open, onClose, info }) => {
                         </>}
                         {!pdf && <>no PDF</>}
                     </Worker>
-                    {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
                 </div>
                 <br />
                 <button type="button" onClick={onClose} class="btn btn-danger mb-2 btn-sm " style={{ position: 'absolute', top: '10px', right: '10px' }}>close</button>

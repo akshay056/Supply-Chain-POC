@@ -13,4 +13,5 @@ function SupplierDashboard() {
         </>
     )
 }
+
 export default SupplierDashboard;

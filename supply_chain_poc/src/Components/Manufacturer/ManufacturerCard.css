@@ -12,14 +12,11 @@
     width: 199px;
 }
 
-
-
 .usercard1 >.card-user:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
-
+}
 
 .usercard1 >.card >.card-footer {
     border-top:unset;
@@ -34,16 +31,7 @@
         margin-top: 40px;
         font-size: 45px;  
 }
-.nftsspan{
-    float: right;
-    margin-right: 35px;
-    margin-top: 40px;
-}
-.nftimage{
-    width: 67px;
-    height: 67px;
-    border-radius: 10px
-}
+
 .button-nn{
     height: 50px;
     width: 207px;

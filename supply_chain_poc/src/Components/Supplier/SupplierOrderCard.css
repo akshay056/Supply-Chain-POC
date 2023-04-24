@@ -1,45 +1,46 @@
-.usercard >.card{
-    background-color: #a6dbf3!important;
+.usercard>.card {
+    background-color: #a6dbf3 !important;
     border-radius: 20px;
     height: 200px;
     width: 399px;
 }
-.usercard >.card-user{
-    background-color: #a7bff3!important;
+
+.usercard>.card-user {
+    background-color: #a7bff3 !important;
     border-radius: 20px;
     height: 200px;
     width: 399px;
 }
-.usercard >.card-b{
-    background-color: #e6d0ff!important;
+
+.usercard>.card-b {
+    background-color: #e6d0ff !important;
     border-radius: 20px;
     height: 200px;
     width: 399px;
 }
-.usercard >.card >.card-footer {
-    border-top:unset;
+
+.usercard>.card>.card-footer {
+    border-top: unset;
 }
-.usercard >.card-title{
+
+.usercard>.card-title {
     font-size: 2rem;
 }
-.usersspan{
-    
-        float: right;
-        margin-right: 35px;
-        margin-top: 40px;
-        font-size: 45px;  
-}
-.nftsspan{
+
+.usersspan {
     float: right;
     margin-right: 35px;
     margin-top: 40px;
+    font-size: 45px;
 }
-.order{
+
+.order {
     width: 67px;
     height: 67px;
     border-radius: 10px
 }
-.button-nn{
+
+.button-nn {
     height: 50px;
     width: 207px;
     border-radius: 20px;
@@ -48,6 +49,7 @@
     text-align: center;
     margin: auto;
 }
-.opensea{
+
+.opensea {
     display: flex;
 }

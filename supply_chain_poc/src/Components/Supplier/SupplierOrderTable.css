@@ -1,6 +1,4 @@
 .ag-theme-alpine {
-    /* --ag-foreground-color: 
-    --ag-background-color:  */
     --ag-header-foreground-color: #000000;
     --ag-header-background-color: #023b6d;
     --ag-odd-row-background-color: rgba(206, 75, 75, 0.03);

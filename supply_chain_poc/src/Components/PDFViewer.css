@@ -1,4 +1,4 @@
-.pdf-container{
+.pdf-container {
     width: 100%;
     height: 500px;
     overflow-y: auto;
@@ -7,8 +7,7 @@
     align-items: center;
 }
 
-
-.overlay{
+.overlay {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -19,22 +18,22 @@
     bottom: 0;
 }
 
-.modal-content-pdf{
+.modal-content-pdf {
     position: absolute;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #f1f1f1;       
+    background: #f1f1f1;
     padding: 14px 14px;
     border-radius: 3px;
     max-width: 1000px;
     min-width: 900px;
-    max-height:93vh ;
-    
+    max-height: 93vh;
+
 }
 
-.close-modal{
+.close-modal {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -48,11 +47,9 @@ p {
     text-overflow: ellipsis;
 }
 
-
-
 .imgC {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-  }
+
+}

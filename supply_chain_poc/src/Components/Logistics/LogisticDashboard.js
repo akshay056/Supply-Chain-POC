@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect, useMemo, useCallback } from "react";
-import LCard from "./LogCard";
+import React, { useState, useEffect } from "react";
+import LCard from "./LogisticCard";
 import Table from "./LogisticTable";
 import Campaign from "../../ethereum/campaign";
-// import MCard from "./MCard";
+
 function Dashboard() {
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
@@ -12,11 +12,8 @@ function Dashboard() {
     const address = '0x8A59B3f39129379D39eC22cA815cA726BB395338'
     const campaign = Campaign(address);
 
-    console.log('use effect campaign', campaign);
-    ( async () => {
+    (async () => {
       const requestCount = await campaign.methods.getSupplyChainDataCount().call();
-      console.log('req count', requestCount);
-      //const approversCount = await campaign.methods.approversCount().call();
       const requests = await Promise.all(
         Array(parseInt(requestCount))
           .fill()
@@ -26,20 +23,16 @@ function Dashboard() {
           })
       );
       setCount(requestCount)
-      console.log('useeffect requests', requests);
       var i = 0, j = 0;
       requests.forEach(ele => {
-        console.log("dbj", ele.status);
-        if (ele.status == false) { i = i + 1; } 
+        if (ele.status == false) { i = i + 1; }
         else { j = j + 1; }
-
       });
-      console.log("cdc", i, j); 
       setCount1(i)
       setCount2(j)
       return { address, requests, requestCount };
     })();
-    return () => {}
+    return () => { }
   }, [])
 
   return (

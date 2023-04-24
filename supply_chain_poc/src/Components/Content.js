@@ -2,13 +2,13 @@ import { useLocation } from 'react-router-dom';
 import Dashboard from './Logistics/LogisticDashboard';
 import Payment from './Logistics/LogisticPayment';
 import ShipmentRequest from './Logistics/LogShipmentRequest';
-
 import SupplierReport from './Supplier/SupplierReport';
 import SupplierPayment from './Supplier/SupplierPayment';
 import SupplierDashboard from './Supplier/SupplierOrderDashboard';
 import SupplierShipment from './Supplier/SupplierShipment';
 import ManufacturerDashboard from './Manufacturer/ManufacturerDashboard';
 import ManufacturerShipment from './Manufacturer/ManufacturerShipment';
+
 function Content() {
     const location = useLocation();
     console.log("location", location);
@@ -24,12 +24,9 @@ function Content() {
             {location && location.pathname === "/Supplier/Payment" && <SupplierPayment />}
             {location && location.pathname === "/Manufacturer/Dashboard" && <ManufacturerDashboard />}
             {location && location.pathname === "/Manufacturer/ShipmentStatus" && <ManufacturerShipment />}
-            
-            
-
-
-            
+            {location && location.pathname === "/Admin" && <ManufacturerDashboard />}
         </>
     )
 }
+
 export default Content;
